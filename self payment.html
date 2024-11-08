@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        position: relative;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+      p {
+        text-align: center;
+        font-size: 24px;
+      }
+      .form {
+        display: flex;
+        justify-content: center;
+      }
+      label {
+        display: block;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        justify-content: center;
+        border: 1px solid black;
+        background-color: #1e1e1e;
+        padding: 30px;
+        border-radius: 15px;
+        font-size: 20px;
+        margin-top: 0px;
+      }
+      form label,
+      input {
+        margin: 5px;
+      }
+      input {
+        background-color: rgb(51, 51, 51);
+        padding: 4px;
+        color: white;
+        font-size: 20px;
+        border: 0px;
+        border-radius: 4px;
+      }
+      .button {
+        background-color: #ab41f7;
+        transition: all 0.2s ease-in;
+        padding: 8px;
+        border-radius: 5px;
+      }
+      .button:hover {
+        background-color: #6a0dad;transform: scale(1.05);
+      }
+     
+    </style>
+  </head>
+  <body>
+    
+      <h1>Join the Epic Reads Revolution!</h1>
+      <p>
+        subscribe now to dive into a world of limitless stories and adventures!
+      </p>
+      <div class="form">
+        <form action="">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="Email">Email:</label>
+          <input type="email" id="Email" name="Name" required />
+          <label for="Phone Number">Phone Number:</label>
+          <input type="tel" id="Phone Number" name="Phone Number" required />
+          <label for="Card name">Card Name</label>
+          <input type="text" id="Card name" name="Card name" required />
+          <label for="cnum">Card Number</label>
+          <input type="number" id="cnum" name="cnum" required />
+          <label for="Expiration Date:">Expiration Date</label>
+          <input type="text" id="Expiration Date" name="Expiration Date" />
+          <label for="plan">Select Plan</label>
+          <label
+            ><input type="radio" name="plan" value="Monthly" required />Monthly
+            Subscription-₹99</label
+          >
+          <label
+            ><input type="radio" name="plan" value="Yearly" required />Yearly
+            Subscription-₹899</label
+          >
+          <label for="promo">Promo Code(Optional)</label>
+          <input type="text" id="promo" name="promo" />
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="address" required />
+          <label for="state">State/Province:</label>
+          <input type="text" id="state" name="state" required />
+          <label for="zip">Zip/Postal Code:</label>
+          <input type="text" id="zip" name="zip" required />
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" required />
+          <input type="submit" value="Proceed" class="button" />
+        </form>
+      </div>
+     
+      
+    
+  </body>
+</html>

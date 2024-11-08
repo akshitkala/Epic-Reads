@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .Signin {
+            margin: 10px auto 20px auto;
+        }
+
+        .contact-container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            width: 450px;
+            max-width: 100%;
+            margin: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .contact-container:hover {
+            filter: drop-shadow(1px 2px 37px #6A0DAD);
+        }
+
+        /* Image container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .image-container img {
+            width: 400px;
+            height: auto;
+        }
+
+        /* Heading and text */
+        .contact-container h1 {
+            font-size: 2rem;
+            color: #6A0DAD;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0 20px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .contact-container a {
+            color: #4C6EF5;
+            text-decoration: none;
+        }
+
+        /* Form styles */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            transition: all 1s ease-in;
+        }
+
+        .contact-form label {
+            font-size: 1rem;
+            color: #333;
+            align-self: flex-start;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .contact-form small {
+            font-size: 0.85rem;
+            color: #6c757d;
+            align-self: flex-start;
+        }
+
+        /* Button styling */
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #6A0DAD;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            margin: auto;
+        }
+
+        .contact-form button:hover {
+            background-color: #4C6EF5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Signin">
+        <div class="contact-container">
+            <div class="image-container">
+                <!-- Example Image (replace with actual image if needed) -->
+                <img src="https://i.imghippo.com/files/cWOz6648lao.png" alt="" border="0" >
+            </div>
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Please fill out the form below to get in touch.</p>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+
+                <small>We'll never share your information with anyone.</small>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
